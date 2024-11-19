@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.repubblicaitaliana" name="RepubblicaItaliana" version="2.2.0" provider-name="Testato">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="inputstream.adaptive" version="0.0.0"/>
+    <import addon="plugin.video.youtube" version="0.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_GB">RepubblicaItaliana</summary>
+    <description lang="en_GB">Italian politics - TV and Radio channels</description>
+    <summary lang="it_IT">RepubblicaItaliana</summary>
+    <description lang="it_IT">Politica italiana - Canali TV e Radio</description>
+    <language>it</language>
+    <platform>all</platform>
+    <license>GPL-3.0-only</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=360944</forum>
+    <email>speednpower@gmail.com</email>
+    <source>https://github.com/Testato/plugin.video.repubblicaitaliana</source>
+    <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+    </assets>
+    <news>2.2.0 (19 Feb 2023)
+- Use of Youtube instead of Tubed
+- Minor fix
+
+2.1.0 (11 Feb 2023)
+- New Camera channel with subtitles
+- Fix all TV and Radio channels
+- Reintroduced InputStream Adaptive
+
+2.0.0 (20 May 2021)
+- Plugin reworked
+- Removed InputStream Adaptive
+- Fix Camera Assemblea
+- Fix TgCom24 on Linux
+    </news>
+  </extension>
+</addon>

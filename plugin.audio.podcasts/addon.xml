@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.audio.podcasts" name="RSS Podcasts" version="2.3.2" provider-name="Heckie">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" version="2.25.1" />
+		<import addon="script.module.xmltodict" version="0.12.0+matrix.2" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">RSS Podcasts in KODI</summary>
+		<summary lang="de_DE">RSS Podcasts in KODI</summary>
+		<description lang="en_GB">This addon allows to import your audio and video podcasts from gPodder.net, Nextcloud Gpoddersync or from OPML files.
+You can make use of up to 10 categories in order to manage your podcasts. You can also directly enter the URLs of your podcasts
+or attach up to 10 OPML files directly.
+		</description>
+		<description lang="de_DE">Dieses Addon ermöglicht den Import Deiner Audio und Video Podcasts von gPodder.net, Nextcloud Gpoddersync oder aus OPML Dateien.
+Du kannst Deine Podcasts in bis zu 10 Kategorien einsortieren. RSS Feeds können auch manuell gepflegt werden. Weiterhin können bis zu 10 OPML
+Dateien direkt eingehängt werden.	
+		</description>
+		<language>de_de</language>
+		<language>en_gb</language>
+		<platform>all</platform>
+		<license>MIT</license>
+		<website>https://github.com/Heckie75/kodi-addon-podcast</website>
+		<source>https://github.com/Heckie75/kodi-addon-podcast</source>
+		<news>
+v2.3.2 (2024-01-21)
+- Fixed bug #23: Addon crashes immediately after starting it (prob. MS Windows only)
+
+v2.3.1 (2023-10-02)
+- Fixed bug #1, support network paths like smb://
+
+v2.3.0 (2023-08-06)
+- Added feature in order to search for podcasts in fyyd.de podcast directory
+- Support for Nextcloud Gpoddersync
+- Improved thumbnail if item is added to favourites
+- Added help texts in settings
+- refactoring
+
+v2.2.3 (2022-10-04)
+- Fixed error if feed is empty (see issue #18)
+
+v2.2.2 (2022-05-26)
+- Improved performance when loading rss feed with episodes (up to 50% faster on RPi 4, see issue #17) 
+- Added feature to limit episodes (see issue #17)
+
+v2.2.1 (2021-10-17)
+- less restrictive when parsing RSS feeds with no XML processing instruction (reported issue #16)
+- Forced UTF-8 encoding, reported problem starting with Kodi 19.2 (reported issue #15)
+
+v2.2.0 (2021-08-14)
+- Added feauture in order to backup feeds as OPML file
+
+v2.1.1 (2021-08-13)
+- Migration to new settings format
+- Refactoring only. No new features
+- Minor bugfixes
+
+v2.1.0 (2021-05-24)
+- Added support for importing subscriptions from your gPodder account or from local files 
+- Added information like duration and plot for video podcasts
+- many refactorings and bugfixes 
+</news>
+		<assets>
+			<icon>resources/assets/icon.png</icon>
+			<fanart>resources/assets/fanart.png</fanart>
+			<screenshot>resources/assets/screenshot_01.png</screenshot>
+			<screenshot>resources/assets/screenshot_02.png</screenshot>
+			<screenshot>resources/assets/screenshot_03.png</screenshot>
+			<screenshot>resources/assets/screenshot_04.png</screenshot>
+			<screenshot>resources/assets/screenshot_05.png</screenshot>
+			<screenshot>resources/assets/screenshot_06.png</screenshot>
+			<screenshot>resources/assets/screenshot_07.png</screenshot>
+			<screenshot>resources/assets/screenshot_08.png</screenshot>
+		</assets>
+	</extension>
+</addon>
